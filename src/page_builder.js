@@ -3,4 +3,16 @@ const HomePageBuilder = function() {
     const content = document.querySelector("#content");
 };
 
-export { HomePageBuilder };
+const MenuPageBuilder = function () {
+
+};
+
+const AboutPageBuilder = function () {
+
+};
+
+export { 
+    HomePageBuilder,
+    MenuPageBuilder,
+    AboutPageBuilder 
+};
