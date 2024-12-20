@@ -2,4 +2,56 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: system-ui, sans-serif;
+    font-size: 20px;
+    --main-color: #9c0824;
+    --bg-color: #fffbf5;
+    --accent-color: #ded29d;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+  background-image: url("./city.png");
+  background-position: -180px -180px;
+  background-size: 360px 360px;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 -1px 1px rgba(60, 60, 60, 0.5);
+}
+
+header .name {
+  font-family: "Allison";
+  font-size: 6rem;
+  font-weight: 400;
+  text-shadow: 1.5px 1.5px 2px rgba(60, 60, 60, 0.5);
+  color: var(--main-color);
+}
+
+header > nav {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+header button {
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 12px 12px 0 0;
+    width: 8rem;
+    height: 3rem;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+header button:not(.open) {
+    box-shadow: inset 0 -2px 2px rgba(60, 60, 60, 0.5);
+}
+
+header .open {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    box-shadow: 1px -1px 1px rgba(60, 60, 60, 0.5);
 }
