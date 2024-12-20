@@ -10,6 +10,8 @@
 }
 
 header {
+  flex: auto;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,4 +56,12 @@ header .open {
     background-color: var(--bg-color);
     color: var(--main-color);
     box-shadow: 1px -1px 1px rgba(60, 60, 60, 0.5);
+}
+
+#content {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./philippines.png");
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
 }
