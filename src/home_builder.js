@@ -1,7 +1,6 @@
 import PIIcon from "./philippines-flag-circle.png";
 
 const HomePageBuilder = function() {
-    const navBar = document.querySelector("header");
     const content = document.querySelector("#content");
 
     const stage = document.createElement("div");

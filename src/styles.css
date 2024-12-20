@@ -129,3 +129,15 @@ header .open {
     display: flex;
     justify-content: space-between;
 }
+
+/* Menu Tab Styling */
+.menu-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(75, 74, 74, 0.503);
+    width: 12rem;
+    height: 4rem;
+}
