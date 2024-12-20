@@ -9,6 +9,8 @@
     --accent-color: #ded29d;
 }
 
+/* Header Styling */
+
 header {
   flex: auto;
 
@@ -60,8 +62,70 @@ header .open {
 
 #content {
     width: 100%;
-    height: 100vh;
+    height: 700px;
+    padding-bottom: 50px;
     background-image: url("./philippines.png");
     background-position: 5% 50%;
     background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Content Styling */
+.main-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    width: 800px;
+    height: 100%;
+
+    padding: 2rem 5rem;
+}
+
+.tag-line {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 3rem;
+    font-family: "Trebuchet MS";
+}
+
+.pi-flag-icon {
+    width: 150px;
+    height: auto;
+}
+
+.info-container {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 3fr;
+    align-items: center;
+
+    background-color: rgb(80, 52, 52);
+    color: var(--bg-color);
+    width: 350px;
+    padding: 20px 50px;
+    border-radius: 25px;
+}
+
+.address {
+    font-weight: 500;
+    grid-row: 1 / 2;
+}
+
+.hours-label {
+    grid-row: 3 / 4;
+    text-decoration: underline;
+    justify-self: center;
+}
+
+.hours {
+    grid-row: 4 / 5;
+}
+
+.info-container li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
