@@ -5,3 +5,7 @@ import "./styles.css";
 
 console.log("Script is running");
 HomePageBuilder();
+
+/*
+    Nav button listeners
+*/
