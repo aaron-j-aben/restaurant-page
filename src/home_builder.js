@@ -23,47 +23,16 @@ const HomePageBuilder = function() {
     piIcon.classList.add("pi-flag-icon");
     stage.appendChild(piIcon);
 
-    // Info container
-    const infoContainer = document.createElement("div");
-    const address = document.createElement("p");
-    const hrsLabel = document.createElement("p");
-    infoContainer.classList.add("info-container");
-    address.classList.add("address");
-    address.innerHTML = "1234 This St<br>Placeville, Country";
-    hrsLabel.classList.add("hours-label");
-    hrsLabel.textContent = "Hours";
+    // Restaurant Description
+    const restDescContainer = document.createElement("div");
+    const restDesc = document.createElement("p");
+    restDescContainer.classList.add("rest-desc");
+    
+    restDesc.textContent = "Experience the diverse flavors of the islands of the Philippines \
+    present in breakfast, lunch, and dinner foods.";
 
-    infoContainer.appendChild(address);
-    infoContainer.appendChild(hrsLabel);
-
-    const hours = document.createElement("ul");
-    hours.classList.add("hours");
-
-    const monFriLi = document.createElement("li");
-    const monFriLabel = document.createElement("span");
-    const monFriHours = document.createElement("span");
-    monFriLabel.classList.add("day");
-    monFriLabel.textContent = "Mon-Fri";
-    monFriHours.classList.add("hours");
-    monFriHours.textContent = "2PM - 12AM";
-    monFriLi.appendChild(monFriLabel);
-    monFriLi.appendChild(monFriHours);
-
-    const wkndLi = document.createElement("li");
-    const wkndLabel = document.createElement("span");
-    const wkndHours = document.createElement("span");
-    wkndLabel.classList.add("day");
-    wkndLabel.textContent = "Sat-Sun";
-    wkndHours.classList.add("hours");
-    wkndHours.textContent = "5PM - 2AM";
-    wkndLi.appendChild(wkndLabel);
-    wkndLi.appendChild(wkndHours);
-
-    hours.appendChild(monFriLi);
-    hours.appendChild(wkndLi);
-
-    infoContainer.appendChild(hours);
-    stage.appendChild(infoContainer);
+    restDescContainer.appendChild(restDesc);
+    stage.appendChild(restDescContainer);
 
     // Add tab content to page
     content.appendChild(stage);

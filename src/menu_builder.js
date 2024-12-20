@@ -7,7 +7,7 @@ const MenuPageBuilder = function () {
     // Menu tab heading
     const menuTitleContainer = document.createElement("div");
     const menuTitle = document.createElement("h2");
-    menuTitleContainer.classList.add("menu-title-container");
+    menuTitleContainer.classList.add("title-container");
     menuTitle.classList.add("tag-line");
     menuTitle.textContent = "Menu";
     menuTitleContainer.appendChild(menuTitle);

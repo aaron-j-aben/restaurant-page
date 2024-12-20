@@ -98,41 +98,20 @@ header .open {
     height: auto;
 }
 
-.info-container {
-    display: grid;
-    grid-template-rows: 2fr 1fr 1fr 3fr;
-    align-items: center;
-
-    background-color: rgb(80, 52, 52);
-    color: var(--bg-color);
-    width: 350px;
-    padding: 20px 50px;
-    border-radius: 25px;
-}
-
-.address {
+.rest-desc {
+    text-align: center;
+    font-size: 2rem;
     font-weight: 500;
-    grid-row: 1 / 2;
+    color: var(--main-color);
 }
 
-.hours-label {
-    grid-row: 3 / 4;
-    text-decoration: underline;
-    justify-self: center;
-}
-
-.hours {
-    grid-row: 4 / 5;
-}
-
-.info-container li {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+.rest-desc > p {
+    font-size: inherit;
+    text-shadow: 1.5px 1.5px 2px rgba(60, 60, 60, 0.5);
 }
 
 /* Menu Tab Styling */
-.menu-title-container {
+.title-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,4 +152,38 @@ header .open {
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--bg-color);
+}
+
+/* About Tab Styling */
+.info-container {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 3fr;
+    align-items: center;
+
+    background-color: rgb(80, 52, 52);
+    color: var(--bg-color);
+    width: 350px;
+    padding: 20px 50px;
+    border-radius: 25px;
+}
+
+.address {
+    font-weight: 500;
+    grid-row: 1 / 2;
+}
+
+.hours-label {
+    grid-row: 3 / 4;
+    text-decoration: underline;
+    justify-self: center;
+}
+
+.hours {
+    grid-row: 4 / 5;
+}
+
+.info-container li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
